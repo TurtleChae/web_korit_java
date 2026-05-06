@@ -12,8 +12,6 @@ package _19_NestedClass;
 @Data // getter, setter, Object오버라이딩, final 필드 생성자
 @Getter @Setter @ToString @EqualsAndHashCode @RequiredArgsConstructor작성
 public class LombokUser {
-    private final String username;
-    private final String password;
-
-
+    private  String username;
+    private String password;
 }
