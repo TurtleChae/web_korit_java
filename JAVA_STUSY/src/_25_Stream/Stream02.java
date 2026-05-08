@@ -64,5 +64,12 @@ public class Stream02 {
                    }
                    return aSum;
                 });
+
+        // 평탄화
+        List<List<Integer>> lists = List.of(
+                List.of(1, 2),
+                List.of(3, 4),
+                List.of(5, 6)
+        );
     }
 }
