@@ -71,5 +71,9 @@ public class Stream02 {
                 List.of(3, 4),
                 List.of(5, 6)
         );
+
+        // 객체를 매 반복마다 기억하는 것 -> 누적합
+        List<Integer>
+
     }
 }
