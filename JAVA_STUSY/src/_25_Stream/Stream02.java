@@ -2,6 +2,7 @@ package _25_Stream;
 
 import lombok.Data;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -73,7 +74,12 @@ public class Stream02 {
         );
 
         // 객체를 매 반복마다 기억하는 것 -> 누적합
-        List<Integer>
-
+        List<Integer> result = lists.stream()
+                .reduce(new ArrayList<>(), (acc, list) -> {
+                    List<Integer> newList = new ArrayList<>(acc); // 누적값(리스트) 복사
+                    newList.addAll(list); // 하나씩 가져온 리스트요소를 누적값에 한번에 넣기
+                    return newList;
+                });
+        System.out.println(result);
     }
 }
