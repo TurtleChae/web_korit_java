@@ -17,7 +17,7 @@ public class Stream02 {
                 // n1 - n2를 리턴하면 오름차순(기본구현)
                 // n2 - n1을 리턴하면 내림차순
                 // n1과 n2가 같다면 0을 리턴하게 구현
-                .sorted((n1, n2) -> n1 - n1)
+                .sorted((n1, n2) -> n1 - n2)
                 .toList();
         System.out.println(sortedNums);
 
