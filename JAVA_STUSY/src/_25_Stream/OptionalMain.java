@@ -34,6 +34,6 @@ public class OptionalMain {
 
         // ifPresent
         // 값이 있을때만 실행
-        opt1.ifPresent();
+        opt1.ifPresent(System.out::println);
     }
 }
